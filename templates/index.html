@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Travel Guide Bot</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='index.css') }}"
+    />
+  </head>
+  <body>
+    <!-- Cover Page -->
+    <section id="cover-page">
+      <div class="cover-content">
+        <div class="cover-left">
+          <img
+            src="{{ url_for('static', filename='images/logo_1.png') }}"
+            alt="TravelGuideBot Logo"
+            class="cover-logo"
+          />
+          <div class="cover-text">
+            <h1>Travel Guide Bot</h1>
+            <p>Your ultimate trip planner</p>
+          </div>
+          <button id="start-button">Start Your Adventure</button>
+        </div>
+        <div class="cover-right">
+          <img
+            src="{{ url_for('static', filename='images/background_1.gif') }}"
+            alt="Travel Guide Bot GIF"
+            class="cover-gif"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content Container -->
+    <div id="main-content" style="display: none">
+      <header>
+        <img
+          src="{{ url_for('static', filename='images/logo_1.png') }}"
+          alt="Travel Guide Bot"
+        />
+        <a href="/"><span>Travel</span>Guide</a>
+      </header>
+      <main>
+        <!-- Chat Interface -->
+        <section id="setup-container">
+          <div id="chat-container">
+            <div class="setup-inner">
+              <img
+                src="{{ url_for('static', filename='images/bot.jpeg') }}"
+                alt="Guide"
+                class="guide-image"
+              />
+              <div class="speech-bubble-ai" id="initial-ai-speech-bubble">
+                <p id="initial-message">
+                  Welcome! 🌍 I'm your Travel Guide Bot, here to assist you in
+                  planning your perfect trip.
+                </p>
+              </div>
+            </div>
+            <!-- Chat bubbles will be appended here -->
+          </div>
+          <div class="setup-input-container" id="setup-input-container">
+            <textarea
+              id="setup-textarea"
+              placeholder="Describe your dream trip here..."
+            ></textarea>
+            <button class="send-btn" id="send-btn" aria-label="send">
+              SUBMIT
+            </button>
+          </div>
+        </section>
+        <section id="image-generation">
+          <h2>Visualize Your Destination</h2>
+          <textarea
+            id="image-prompt"
+            placeholder="Describe the scene you'd like to see..."
+          ></textarea>
+          <button id="generate-image-button">Generate Image</button>
+          <div id="image-container">
+            <!-- Image will be displayed here -->
+          </div>
+        </section>
+      </main>
+      <footer>&copy; 2024 Travel Guide Bot. All rights reserved.</footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='index.js') }}"></script>
+  </body>
+</html>
