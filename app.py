@@ -22,7 +22,7 @@ def get_weather(city):
     params = {
         'q': city,
         'units': 'metric',
-        'appid': '8dea31bcc137c031e9ca2ae1c3fe70c7'
+        'appid': 'YOUR WEATHER API'
     }
     response = requests.get(base_url, params=params)
     weather_data = response.json()
