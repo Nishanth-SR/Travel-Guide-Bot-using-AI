@@ -1,0 +1,330 @@
+/* Cover Page Styles */
+#cover-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background: linear-gradient(135deg, #1e3c72, #2a5298); /* Gradient background */
+    color: #ffffff;
+    transition: opacity 1s ease-in-out;
+}
+
+.cover-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.cover-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px; /* Increased gap for better spacing */
+    text-align: left;
+}
+
+.cover-logo {
+    width: 300px;
+    height: auto;
+    border-radius: 10px; /* Rounded corners for a modern look */
+}
+
+.cover-text h1 {
+    margin: 0;
+    font-size: 3.5rem; /* Larger font size for prominence */
+    font-family: 'Playfair Display', serif;
+}
+
+.cover-text p {
+    margin: 0;
+    font-size: 1.5rem; /* Larger font size for readability */
+}
+
+.cover-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cover-gif {
+    width: 500px; /* Adjusted width for better visibility */
+    height: auto;
+    border-radius: 15px; /* Rounded corners for a modern look */
+}
+
+#start-button {
+    padding: 15px 30px; /* Increased padding for a more prominent button */
+    border-radius: 25px; /* More rounded corners for a modern look */
+    border: none;
+    background: linear-gradient(45deg, #ff6f61, #d8335c); /* Gradient background */
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold; /* Bold text for emphasis */
+    text-transform: uppercase; /* Uppercase text for a stronger impact */
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease; /* Smooth transition for hover effects */
+}
+
+#start-button:hover {
+    background: linear-gradient(45deg, #d8335c, #ff6f61); /* Inverted gradient on hover */
+    transform: scale(1.05); /* Slightly enlarges button on hover */
+}
+
+#start-button:active {
+    background: linear-gradient(45deg, #e45d4e, #c72a51); /* Darker gradient when button is pressed */
+    transform: scale(0.98); /* Slightly shrinks button on click */
+}
+
+#start-button:focus {
+    outline: none; /* Removes default outline */
+    box-shadow: 0 0 0 3px rgba(255, 105, 97, 0.5); /* Adds a subtle shadow for focus */
+}
+
+/* Main Content Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8; /* Light background color */
+    color: #333333; /* Dark text color for contrast */
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #1e3c72, #2a5298); /* Bright blue background */
+    color: #fff;
+    padding: 15px 20px;
+    position: relative;
+}
+
+header img {
+    height: 50px; /* Increased height for better visibility */
+    position: absolute;
+    left: 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    font-size: 28px; /* Larger font size for header */
+    font-weight: 700;
+}
+
+/* Main Content */
+main {
+    padding: 30px; /* Increased padding for better spacing */
+}
+
+/* Chat Container Styles */
+#chat-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Increased gap for better spacing */
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff; /* White background for contrast */
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    height: 60vh;
+}
+
+.setup-inner {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Increased gap for spacing */
+}
+
+.guide-image {
+    width: 60px; /* Increased width for better visibility */
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #4a90e2; /* Blue border for emphasis */
+}
+
+.speech-bubble-ai {
+    padding: 15px 25px; /* Increased padding for better readability */
+    border-radius: 15px;
+    max-width: 80%;
+    word-wrap: break-word;
+    background-color: #f1f1f1; /* Light grey background for AI messages */
+    color: #333; /* Dark text color for readability */
+}
+
+.speech-bubble-user {
+    align-self: flex-end;
+    padding: 15px 25px; /* Increased padding for better readability */
+    border-radius: 15px;
+    max-width: 80%;
+    word-wrap: break-word;
+    background-color: #4a90e2; /* Blue background for user messages */
+    color: #ffffff; /* White text color for readability */
+}
+
+/* Input Container Styles */
+.setup-input-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px; /* Increased gap for better spacing */
+    padding: 10px;
+    background-color: #ffffff; /* White background for contrast */
+    border-top: 1px solid #ddd; /* Light border for separation */
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+}
+
+#setup-textarea {
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9; /* Light background for input */
+    color: #333;
+    resize: vertical;
+    font-size: 16px; /* Font size for textarea */
+}
+
+.send-btn {
+    padding: 10px 25px; /* Increased padding for a button */
+    border-radius: 10px;
+    border: none;
+    background: linear-gradient(135deg, #1e3c72, #2a5298); 
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 18px; /* Increased font size for button */
+}
+
+.send-btn:hover {
+    background-color: #357abd;
+}
+
+/* Image Generation Section Styles */
+#image-generation {
+    margin-top: 30px;
+    padding: 25px;
+    background-color: #ffffff; /* White background for contrast */
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+#image-generation h2 {
+    margin-bottom: 15px; /* Increased margin for spacing */
+    font-size: 1.8rem;
+    color: #1e3c72; /* Blue color for header */
+}
+
+#image-prompt {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9; /* Light background for input */
+    color: #333;
+    resize: vertical;
+}
+
+#generate-image-button {
+    padding: 12px 25px;
+    border-radius: 5px;
+    border: none;
+    background: linear-gradient(135deg, #1e3c72, #2a5298); 
+    color: #ffffff;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px; /* Font size for button */
+}
+
+#image-container {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#image-container img {
+    max-width: 100%;
+    max-height: 400px; /* Increased height for better visibility */
+    object-fit: contain;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);  /* Blue background for footer */
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cover-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cover-right img {
+        width: 80%;
+    }
+
+    .cover-left {
+        align-items: center;
+    }
+
+    .cover-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .cover-text p {
+        font-size: 1.2rem;
+    }
+
+    #start-button {
+        font-size: 18px;
+    }
+
+    #chat-container {
+        height: 50vh;
+    }
+
+    .setup-input-container {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    #setup-textarea {
+        width: 100%;
+    }
+
+    .send-btn {
+        width: 100%;
+    }
+}
+
+/* Weather Container Styles */
+.weather-container {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.weather-box {
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #f0f4f8;
+    color: #333;
+    text-align: center;
+    font-size: 16px;
+}
